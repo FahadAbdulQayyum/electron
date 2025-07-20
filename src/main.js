@@ -74,7 +74,12 @@ try {
       attendanceDate TEXT,
       attendanceTime TEXT,
       FOREIGN KEY (memberId) REFERENCES members(id)
-    )
+    );
+    CREATE TABLE IF NOT EXISTS timeslots (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      time TEXT NOT NULL,
+      memberId INTEGER
+    );
   `);
   console.log('Tables created successfully');
   ensureSchema(); // Run schema migration after table creation
@@ -355,6 +360,75 @@ ipcMain.handle('searchMembersForAttendance', async (event, query) => {
     return result;
   } catch (error) {
     console.error('Error searching members for attendance:', error);
+    throw error;
+  }
+});
+
+// // IPC handlers for time slot operations
+// ipcMain.handle('addTimeSlot', async (event, { time, memberId }) => {
+//   return new Promise((resolve, reject) => {
+//     db.run(
+//       `INSERT INTO timeslots (time, memberId) VALUES (?, ?)`,
+//       [time, memberId],
+//       function (err) {
+//         if (err) reject(err);
+//         else resolve({ id: this.lastID, time, memberId });
+//       }
+//     );
+//   });
+// });
+
+// ipcMain.handle('getTimeSlots', async (event) => {
+//   return new Promise((resolve, reject) => {
+//     db.all(`SELECT * FROM timeslots`, [], (err, rows) => {
+//       if (err) reject(err);
+//       else resolve(rows);
+//     });
+//   });
+// });
+
+// ipcMain.handle('deleteTimeSlot', async (event, id) => {
+//   return new Promise((resolve, reject) => {
+//     db.run(`DELETE FROM timeslots WHERE id = ?`, [id], function (err) {
+//       if (err) reject(err);
+//       else resolve({ success: true, changes: this.changes });
+//     });
+//   });
+// });
+
+// IPC handlers for time slot operations
+ipcMain.handle('addTimeSlot', async (event, { time, memberId }) => {
+  try {
+    const stmt = db.prepare('INSERT INTO timeslots (time, memberId) VALUES (?, ?)');
+    const result = stmt.run(time, memberId);
+    console.log('Added time slot with ID:', result.lastInsertRowid);
+    return { id: result.lastInsertRowid, time, memberId };
+  } catch (error) {
+    console.error('Error adding time slot:', error);
+    throw error;
+  }
+});
+
+ipcMain.handle('getTimeSlots', async (event) => {
+  try {
+    const stmt = db.prepare('SELECT * FROM timeslots');
+    const result = stmt.all();
+    console.log('Fetched time slots:', result);
+    return result;
+  } catch (error) {
+    console.error('Error fetching time slots:', error);
+    throw error;
+  }
+});
+
+ipcMain.handle('deleteTimeSlot', async (event, id) => {
+  try {
+    const stmt = db.prepare('DELETE FROM timeslots WHERE id = ?');
+    const result = stmt.run(id);
+    console.log('Deleted time slot ID:', id, 'Changes:', result.changes);
+    return { success: true, changes: result.changes };
+  } catch (error) {
+    console.error('Error deleting time slot:', error);
     throw error;
   }
 });
