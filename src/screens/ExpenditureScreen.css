@@ -1,0 +1,174 @@
+.expenditure-container {
+  display: flex;
+  gap: 18px;
+  background: #fff;
+  padding: 24px 24px 0 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin: 24px auto;
+  max-width: 98%;
+  min-height: 420px;
+}
+.expenditure-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+  padding-right: 18px;
+  min-width: 260px;
+}
+.expenditure-add-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+.expenditure-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.expenditure-select {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 1rem;
+  background: #fff;
+}
+.expenditure-select.small {
+  min-width: 100px;
+  margin-left: 6px;
+}
+.expenditure-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.expenditure-btn.edit {
+  background: #ff9800;
+  margin-left: 2px;
+}
+.expenditure-btn.new {
+  background: #1976d2;
+}
+.expenditure-save-btn {
+  background: #e65100;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.expenditure-save-btn:hover {
+  background: #b36b00;
+}
+.expenditure-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+}
+.expenditure-header-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.expenditure-groupwise {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1rem;
+}
+.expenditure-date-input {
+  padding: 4px 8px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+.expenditure-search-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.expenditure-search-btn:hover {
+  background: #125ea2;
+}
+.expenditure-table-section {
+  margin-top: 8px;
+}
+.expenditure-table-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.expenditure-table-wrapper {
+  overflow-x: auto;
+  background: #f7f7f7;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.expenditure-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f7f7f7;
+}
+.expenditure-table th, .expenditure-table td {
+  border: 1px solid #bbb;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 1rem;
+}
+.expenditure-table th {
+  background: #888;
+  color: #fff;
+  font-weight: 600;
+}
+.expenditure-table td {
+  background: #fff;
+}
+.expenditure-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 16px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.expenditure-total {
+  color: #e65100;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 4px;
+}
+.expenditure-print-btn {
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.expenditure-print-btn:hover {
+  background: #256029;
+} 

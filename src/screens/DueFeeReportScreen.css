@@ -1,0 +1,118 @@
+.due-fee-container {
+  background: #fff;
+  padding: 24px 24px 0 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin: 24px auto;
+  max-width: 98%;
+}
+.due-fee-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.due-fee-link {
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.due-fee-filters-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+  gap: 24px;
+}
+.due-fee-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.due-fee-checkboxes label {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.due-fee-dropdowns {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+.due-fee-dropdowns label {
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+}
+.due-fee-dropdowns select {
+  padding: 4px 8px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+.due-fee-show-btn {
+  background: #b71c3a;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 8px;
+}
+.due-fee-show-btn:hover {
+  background: #8a1530;
+}
+.due-fee-table-section {
+  margin-top: 12px;
+}
+.due-fee-table-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.due-fee-table-wrapper {
+  overflow-x: auto;
+  background: #f7f7f7;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.due-fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f7f7f7;
+}
+.due-fee-table th, .due-fee-table td {
+  border: 1px solid #bbb;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 1rem;
+}
+.due-fee-table th {
+  background: #888;
+  color: #fff;
+  font-weight: 600;
+}
+.due-fee-table td {
+  background: #fff;
+}
+.due-fee-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 12px 0 16px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.due-fee-total-label {
+  margin-right: 8px;
+}
+.due-fee-total-value {
+  color: #b71c3a;
+  font-size: 1.2rem;
+  font-weight: bold;
+} 

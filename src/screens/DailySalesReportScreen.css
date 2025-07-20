@@ -1,0 +1,140 @@
+.daily-sales-container {
+  background: #fff;
+  padding: 24px 24px 0 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin: 24px auto;
+  max-width: 98%;
+  min-height: 420px;
+}
+.daily-sales-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.daily-sales-link {
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.daily-sales-filters-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.daily-sales-date-input {
+  padding: 4px 8px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+.daily-sales-report-btn {
+  background: #b71c3a;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 8px;
+}
+.daily-sales-report-btn:hover {
+  background: #8a1530;
+}
+.daily-sales-table-section {
+  margin-top: 8px;
+}
+.daily-sales-table-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.daily-sales-table-wrapper {
+  overflow-x: auto;
+  background: #f7f7f7;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.daily-sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f7f7f7;
+}
+.daily-sales-table th, .daily-sales-table td {
+  border: 1px solid #bbb;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 1rem;
+}
+.daily-sales-table th {
+  background: #888;
+  color: #fff;
+  font-weight: 600;
+}
+.daily-sales-table td {
+  background: #fff;
+}
+.highlight-row {
+  background: #1976d2 !important;
+  color: #fff !important;
+}
+.daily-sales-table .highlight-row td {
+  background: #1976d2 !important;
+  color: #fff !important;
+}
+.daily-sales-footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0 16px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.footer-label {
+  margin-right: 4px;
+}
+.footer-input {
+  width: 70px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+  margin-left: 4px;
+}
+.footer-input.green {
+  background: #c8e6c9;
+  color: #222;
+}
+.footer-input.red {
+  background: #ffcdd2;
+  color: #b71c3a;
+}
+.footer-input.blue {
+  background: #bbdefb;
+  color: #1976d2;
+}
+.footer-input.orange {
+  background: #ffe0b2;
+  color: #e65100;
+}
+.daily-sales-print-btn {
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.daily-sales-print-btn:hover {
+  background: #256029;
+} 

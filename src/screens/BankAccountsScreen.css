@@ -1,0 +1,134 @@
+.bank-accounts-container {
+  display: flex;
+  gap: 18px;
+  background: #fff;
+  padding: 24px 24px 0 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin: 24px auto;
+  max-width: 98%;
+  min-height: 420px;
+}
+.bank-accounts-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+  padding-right: 18px;
+  min-width: 260px;
+}
+.bank-accounts-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+.bank-accounts-input {
+  padding: 7px 12px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 1rem;
+  background: #fff;
+  margin-bottom: 8px;
+}
+.bank-accounts-input.yellow {
+  background: #fff9c4;
+}
+.bank-accounts-create-btn {
+  background: #e65100;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.bank-accounts-create-btn:hover {
+  background: #b36b00;
+}
+.bank-accounts-btn-row {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0 0 0;
+}
+.bank-accounts-save-btn, .bank-accounts-update-btn {
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.bank-accounts-save-btn:hover, .bank-accounts-update-btn:hover {
+  background: #256029;
+}
+.bank-accounts-refresh-btn {
+  background: #b71c3a;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+.bank-accounts-refresh-btn:hover {
+  background: #8a1530;
+}
+.bank-accounts-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+}
+.bank-accounts-table-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.bank-accounts-table-wrapper {
+  overflow-x: auto;
+  background: #f7f7f7;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.bank-accounts-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f7f7f7;
+}
+.bank-accounts-table th, .bank-accounts-table td {
+  border: 1px solid #bbb;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 1rem;
+}
+.bank-accounts-table th {
+  background: #888;
+  color: #fff;
+  font-weight: 600;
+}
+.bank-accounts-table td {
+  background: #fff;
+}
+.bank-accounts-edit-btn {
+  background: #8bc34a;
+  color: #222;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.bank-accounts-edit-btn:hover {
+  background: #558b2f;
+  color: #fff;
+} 
