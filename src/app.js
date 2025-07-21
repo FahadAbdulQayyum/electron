@@ -21,6 +21,7 @@ import BankAccountsScreen from './screens/BankAccountsScreen';
 import DailySalesReportScreen from './screens/DailySalesReportScreen';
 import { myGithub, myPhone } from './utils/constants';
 import TodoScreen from './screens/TodoScreen';
+import MemberDetailsScreen from './screens/MembersDetail';
 
 function App() {
   const [currentView, setCurrentView] = useState('dashboard');
@@ -155,6 +156,7 @@ function App() {
         {currentView === 'todo' && <TodoScreen />}
         {currentView === 'dashboard' && <DashboardScreen />}
         {currentView === 'add-member' && <AddMemberScreen />}
+        {currentView === 'all-members' && <MemberDetailsScreen />}
         {currentView === 'select-member' && <SelectMemberScreen />}
         {currentView === 'add-trainer' && <AddTrainerScreen />}
         {currentView === 'add-packages' && <AddPackageScreen />}
